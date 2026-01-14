@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RicordaMe – Support</title>
+  <meta name="description" content="Support page for RicordaMe iOS app." />
+  <style>
+    :root {
+      --bg: #0b0c0f;
+      --card: #141621;
+      --text: #e9ebf2;
+      --muted: #b7bccb;
+      --accent: #6aa8ff;
+      --border: rgba(255,255,255,0.08);
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 800px at 20% 0%, rgba(106,168,255,0.25), transparent 60%),
+                  radial-gradient(900px 600px at 80% 10%, rgba(255,255,255,0.08), transparent 60%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 900px;
+      padding: 48px 18px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 28px 24px;
+      background: rgba(20,22,33,0.75);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      margin: 0 0 10px 0;
+      font-size: 32px;
+      letter-spacing: -0.4px;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    @media (min-width: 820px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .card {
+      background: rgba(20,22,33,0.75);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px 18px;
+      backdrop-filter: blur(10px);
+    }
+
+    h2 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      letter-spacing: -0.2px;
+    }
+
+    p, li {
+      color: var(--muted);
+      margin: 8px 0;
+      font-size: 14.5px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .pill {
+      display: inline-block;
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: rgba(255,255,255,0.03);
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 12.5px;
+      text-align: center;
+      opacity: 0.9;
+    }
+
+    .small {
+      font-size: 12.5px;
+      opacity: 0.95;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="hero">
+      <h1>RicordaMe – Support</h1>
+      <p class="subtitle">Help, FAQs and contact information for the RicordaMe iOS app.</p>
+      <div class="pill">No login required · Data stored locally on device</div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Contact</h2>
+        <p>
+          If you need help, report a bug, or want to suggest improvements:
+        </p>
+        <ul>
+          <li>Email: <a href="mailto:nicobulich@gmail.com">nicobulich@gmail.com</a></li>
+        </ul>
+        <p class="small">
+          Please include your iPhone model and iOS version in your message.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+          <li><strong>How do I create a task?</strong><br />Tap the add button and type your task title.</li>
+          <li><strong>How do categories work?</strong><br />Create categories and assign colors to organize tasks visually.</li>
+          <li><strong>What happens when I complete a task?</strong><br />Completed tasks are moved to the Archive and remain accessible.</li>
+          <li><strong>Does RicordaMe require an account?</strong><br />No. RicordaMe works without any login.</li>
+          <li><strong>Where is my data stored?</strong><br />Your data is stored locally on your device.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>App Review Information</h2>
+        <p>
+          RicordaMe does not require login to access any feature.
+        </p>
+        <p>
+          Main features to test:
+        </p>
+        <ul>
+          <li>Create tasks</li>
+          <li>Create categories and assign colors</li>
+          <li>Archive completed tasks</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Privacy</h2>
+        <p>
+          RicordaMe is designed with privacy in mind.
+        </p>
+        <ul>
+          <li>No account required</li>
+          <li>No unnecessary data collection</li>
+          <li>Data is stored locally on the device</li>
+        </ul>
+        <p class="small">
+          If you publish a separate Privacy Policy page in the future, you can link it here.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      © <span id="year"></span> RicordaMe · Support Page
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
