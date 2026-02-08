@@ -1,195 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RicordaMe – Support</title>
-  <meta name="description" content="Support page for RicordaMe iOS app." />
-  <style>
-    :root {
-      --bg: #0b0c0f;
-      --card: #141621;
-      --text: #e9ebf2;
-      --muted: #b7bccb;
-      --accent: #6aa8ff;
-      --border: rgba(255,255,255,0.08);
-    }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: radial-gradient(1200px 800px at 20% 0%, rgba(106,168,255,0.25), transparent 60%),
-                  radial-gradient(900px 600px at 80% 10%, rgba(255,255,255,0.08), transparent 60%),
-                  var(--bg);
-      color: var(--text);
-      line-height: 1.5;
-    }
-
-    .container {
-      max-width: 900px;
-      padding: 48px 18px;
-      margin: 0 auto;
-    }
-
-    .hero {
-      padding: 28px 24px;
-      background: rgba(20,22,33,0.75);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      backdrop-filter: blur(10px);
-    }
-
-    h1 {
-      margin: 0 0 10px 0;
-      font-size: 32px;
-      letter-spacing: -0.4px;
-    }
-
-    .subtitle {
-      margin: 0;
-      color: var(--muted);
-      font-size: 16px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-      margin-top: 18px;
-    }
-
-    @media (min-width: 820px) {
-      .grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    .card {
-      background: rgba(20,22,33,0.75);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 18px 18px;
-      backdrop-filter: blur(10px);
-    }
-
-    h2 {
-      margin: 0 0 10px 0;
-      font-size: 18px;
-      letter-spacing: -0.2px;
-    }
-
-    p, li {
-      color: var(--muted);
-      margin: 8px 0;
-      font-size: 14.5px;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .pill {
-      display: inline-block;
-      font-size: 12px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      color: var(--text);
-      background: rgba(255,255,255,0.03);
-      margin-top: 10px;
-    }
-
-    footer {
-      margin-top: 22px;
-      color: var(--muted);
-      font-size: 12.5px;
-      text-align: center;
-      opacity: 0.9;
-    }
-
-    .small {
-      font-size: 12.5px;
-      opacity: 0.95;
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RicordaMe</title>
+<base href="/ricordame-support/" />
+<meta name="description" content="Support site for RicordaMe iOS app" />
+<style>
+:root{--bg:#090a0f;--panel:rgba(255,255,255,.03);--border:rgba(255,255,255,.08);--text:#e9ebf2;--muted:#b7bccb;--accent:#6aa8ff}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(1200px 800px at 20% 0%,rgba(106,168,255,.18),transparent 60%),radial-gradient(900px 600px at 80% 10%,rgba(255,255,255,.06),transparent 60%),var(--bg);color:var(--text)}
+.wrap{max-width:940px;margin:0 auto;padding:0 16px}
+.site-header{position:sticky;top:0;z-index:10;background:rgba(9,10,15,.65);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.site-header .wrap{display:flex;align-items:center;gap:12px;padding:12px 16px}
+.brand{color:var(--text);text-decoration:none;font-weight:700}
+.nav{display:flex;gap:10px;flex:1;flex-wrap:wrap}
+.nav a{color:var(--muted);text-decoration:none;font-size:14px;border:1px solid transparent;padding:6px 8px;border-radius:999px}
+.nav a:hover,.nav a.active{border-color:var(--border);color:var(--text);background:var(--panel)}
+select{border-radius:12px;border:1px solid var(--border);background:var(--panel);color:var(--text);padding:6px 10px;outline:none}
+main{padding:22px 0}
+.section{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:16px;margin-bottom:16px}
+.section .pad{padding:18px 18px}
+h1,h2{margin:0 0 8px;letter-spacing:-.3px}
+p{margin:8px 0;color:var(--muted);line-height:1.6}
+ul{margin:8px 0 8px 22px;color:var(--muted)}
+footer{border-top:1px solid var(--border);padding:18px 0;color:var(--muted);font-size:13px}
+.btn{display:inline-block;border:1px solid var(--border);background:var(--panel);color:var(--text);padding:8px 10px;border-radius:12px;text-decoration:none;margin-top:8px}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;background:rgba(255,255,255,.05);border:1px solid var(--border);padding:2px 6px;border-radius:8px;color:var(--text)}
+</style>
 </head>
-
 <body>
-  <div class="container">
-    <div class="hero">
-      <h1>RicordaMe – Support</h1>
-      <p class="subtitle">Help, FAQs and contact information for the RicordaMe iOS app.</p>
-      <div class="pill">No login required · Data stored locally on device</div>
-    </div>
-
-    <div class="grid">
-      <div class="card">
-        <h2>Contact</h2>
-        <p>
-          If you need help, report a bug, or want to suggest improvements:
-        </p>
-        <ul>
-          <li>Email: <a href="mailto:nicobulich@gmail.com">nicobulich@gmail.com</a></li>
-        </ul>
-        <p class="small">
-          Please include your iPhone model and iOS version in your message.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Frequently Asked Questions</h2>
-        <ul>
-          <li><strong>How do I create a task?</strong><br />Tap the add button and type your task title.</li>
-          <li><strong>How do categories work?</strong><br />Create categories and assign colors to organize tasks visually.</li>
-          <li><strong>What happens when I complete a task?</strong><br />Completed tasks are moved to the Archive and remain accessible.</li>
-          <li><strong>Does RicordaMe require an account?</strong><br />No. RicordaMe works without any login.</li>
-          <li><strong>Where is my data stored?</strong><br />Your data is stored locally on your device.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>App Review Information</h2>
-        <p>
-          RicordaMe does not require login to access any feature.
-        </p>
-        <p>
-          Main features to test:
-        </p>
-        <ul>
-          <li>Create tasks</li>
-          <li>Create categories and assign colors</li>
-          <li>Archive completed tasks</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>Privacy</h2>
-        <p>
-          RicordaMe is designed with privacy in mind.
-        </p>
-        <ul>
-          <li>No account required</li>
-          <li>No unnecessary data collection</li>
-          <li>Data is stored locally on the device</li>
-        </ul>
-        <p class="small">
-          If you publish a separate Privacy Policy page in the future, you can link it here.
-        </p>
-      </div>
-    </div>
-
-    <footer>
-      © <span id="year"></span> RicordaMe · Support Page
-    </footer>
+<header class="site-header">
+  <div class="wrap">
+    <a id="brand" class="brand" href="#">RicordaMe</a>
+    <nav id="nav" class="nav" aria-label="Primary"></nav>
+    <select id="locale" aria-label="Language"></select>
   </div>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+</header>
+<main class="wrap"><div id="app"></div></main>
+<footer><div class="wrap"><span id="foot"></span></div></footer>
+<script>
+const SUPPORTED=['en','it','fr','de','es'];
+function getBasePath(){const b=document.querySelector('base');if(!b)return '';let base=new URL(b.getAttribute('href')||'/',location.origin).pathname;return base.endsWith('/')?base.slice(0,-1):base;}
+function getRoute(){const base=getBasePath();const params=new URLSearchParams(location.search);const p=params.get('p');let path=p?decodeURIComponent(p):location.pathname; if(path.startsWith(base)) path=path.slice(base.length); if(path.startsWith('/')) path=path.slice(1); const parts=path.split('/').filter(Boolean); const locale=parts[0]; const page=parts[1]||'support'; return {base,parts,locale,page};}
+function selectLocale(){const params=new URLSearchParams(location.search);const q=(params.get('lang')||'').toLowerCase();if(q&&SUPPORTED.includes(q))return q;const nav=(navigator.language||'en').toLowerCase();const short=nav.split('-')[0];return SUPPORTED.includes(short)?short:'en';}
+function normalize(route){let locale=route.locale;let page=route.page;const parts=route.parts;
+ if(!SUPPORTED.includes(locale)){locale=selectLocale();page='support';}
+ const allowed=['support','faq','contact','privacy','release-notes'];
+ if(!allowed.includes(page)) page='support';
+ // keep deep page if allowed
+ let newPage=page;
+ // Accept /it/privacy/ and /it/privacy/index.html implicitly
+ return {base:route.base,locale:locale,page:newPage};
+}
+const T={
+ en:{names:{en:'English',it:'Italiano',fr:'Français',de:'Deutsch',es:'Español'},nav:{support:'Support',faq:'FAQ',contact:'Contact',privacy:'Privacy',releaseNotes:'Release notes'},foot:(y)=>`© ${y} RicordaMe · Support`,pages:{
+ support:{title:'RicordaMe – Support',hero:'How can we help?',lead:'Support, FAQs and contact information for the RicordaMe iOS app.',cta:'Email support',note:'Please include your iPhone model and iOS version.',quickLinks:'Quick links',privacy:'Privacy summary',privacyLines:['No login required','No unnecessary data collection','Data is stored locally on the device'],appReviewTitle:'App Review Info',appReviewLead:'RicordaMe does not require login to access any feature.',appReviewList:['Create tasks','Create categories and assign colors','Archive completed tasks']},
+ privacy:{title:'RicordaMe – Privacy',hero:'Privacy Policy',lead:'RicordaMe is designed with privacy in mind.',sections:[{h:'What data does RicordaMe collect?',b:['RicordaMe does not require an account.','RicordaMe does not collect personal data for analytics or advertising.']},{h:'Where is my data stored?',b:['Your data is stored locally on your device.']},{h:'How is the data used?',b:['Your data is used only inside the app to show your tasks and categories.']}],mailHint:'If you have questions, contact support:',mail:'nicobulich@gmail.com'},
+ faq:{title:'RicordaMe – FAQ',hero:'Frequently Asked Questions',q:[{q:'How do I create a task?',a:'Tap the add button and type your task title.'},{q:'How do categories work?',a:'Create categories and assign colors to organize tasks visually.'},{q:'What happens when I complete a task?',a:'Completed tasks are moved to the Archive and remain accessible.'},{q:'Does RicordaMe require an account?',a:'No. RicordaMe works without any login.'},{q:'Where is my data stored?',a:'Your data is stored locally on your device.'}]},
+ contact:{title:'RicordaMe – Contact',hero:'Contact',lead:'If you need help, report a bug, or want to suggest improvements:',mail:'Email',mailHint:'Please include your iPhone model and iOS version in your message.'},
+ releaseNotes:{title:'RicordaMe – Release notes',hero:'Release notes',lead:'A short changelog you can keep updated.',items:['Initial public release','Improved support site']}
+ }},
+ it:{names:{en:'English',it:'Italiano',fr:'Français',de:'Deutsch',es:'Español'},nav:{support:'Supporto',faq:'FAQ',contact:'Contatti',privacy:'Privacy',releaseNotes:'Note di rilascio'},foot:(y)=>`© ${y} RicordaMe · Supporto`,pages:{
+ support:{title:'RicordaMe – Supporto',hero:'Come possiamo aiutarti?',lead:'Supporto, FAQ e contatti per l’app iOS RicordaMe.',cta:'Scrivi all’assistenza',note:'Inserisci nel messaggio modello iPhone e versione iOS.',quickLinks:'Link rapidi',privacy:'Riepilogo privacy',privacyLines:['Nessun login richiesto','Nessuna raccolta dati non necessaria','Dati salvati localmente sul dispositivo'],appReviewTitle:'Info per App Review',appReviewLead:'RicordaMe non richiede login per accedere alle funzionalità.',appReviewList:['Creare attività','Creare categorie e assegnare colori','Archiviare attività completate']},
+ privacy:{title:'RicordaMe – Privacy',hero:'Informativa privacy',lead:'RicordaMe è progettata pensando alla privacy.',sections:[{h:'Quali dati raccoglie RicordaMe?',b:['RicordaMe non richiede un account.','RicordaMe non raccoglie dati personali per analisi o pubblicità.']},{h:'Dove vengono salvati i dati?',b:['I dati sono salvati localmente sul dispositivo.']},{h:'Come vengono usati i dati?',b:['I dati vengono usati solo dentro l’app per mostrare attività e categorie.']}],mailHint:'Per domande, contatta l’assistenza:',mail:'nicobulich@gmail.com'},
+ faq:{title:'RicordaMe – FAQ',hero:'Domande frequenti',q:[{q:'Come creo un’attività?',a:'Tocca il pulsante “+” e scrivi il titolo.'},{q:'Come funzionano le categorie?',a:'Crea categorie e assegna colori per organizzare le attività.'},{q:'Cosa succede quando completo un’attività?',a:'Le attività completate finiscono in Archivio e restano disponibili.'},{q:'RicordaMe richiede un account?',a:'No. RicordaMe funziona senza login.'},{q:'Dove sono salvati i miei dati?',a:'I dati sono salvati localmente sul dispositivo.'}]},
+ contact:{title:'RicordaMe – Contatti',hero:'Contatti',lead:'Per assistenza, segnalare bug o suggerimenti:',mail:'Email',mailHint:'Inserisci nel messaggio modello iPhone e versione iOS.'},
+ releaseNotes:{title:'RicordaMe – Note di rilascio',hero:'Note di rilascio',lead:'Breve changelog da aggiornare nel tempo.',items:['Prima versione','Sito di supporto multilingua']}
+ }},
+ fr:{names:{en:'English',it:'Italiano',fr:'Français',de:'Deutsch',es:'Español'},nav:{support:'Assistance',faq:'FAQ',contact:'Contact',privacy:'Confidentialité',releaseNotes:'Notes de version'},foot:(y)=>`© ${y} RicordaMe · Assistance`,pages:{
+ support:{title:'RicordaMe – Assistance',hero:'Comment pouvons-nous vous aider ?',lead:'Aide, FAQ et contact pour l’app iOS RicordaMe.',cta:'Envoyer un email',note:'Veuillez indiquer le modèle d’iPhone et la version iOS.',quickLinks:'Liens rapides',privacy:'Résumé confidentialité',privacyLines:['Aucune connexion requise','Pas de collecte de données inutile','Données stockées localement sur l’appareil'],appReviewTitle:'Infos App Review',appReviewLead:'RicordaMe ne nécessite pas de connexion pour accéder aux fonctionnalités.',appReviewList:['Créer des tâches','Créer des catégories et attribuer des couleurs','Archiver les tâches terminées']},
+ privacy:{title:'RicordaMe – Confidentialité',hero:'Politique de confidentialité',lead:'RicordaMe est conçue dans le respect de votre confidentialité.',sections:[{h:'Quels types de données RicordaMe collecte ?',b:['RicordaMe ne nécessite pas de compte.','RicordaMe ne collecte pas de données personnelles pour l’analyse ou la publicité.']},{h:'Où les données sont-elles stockées ?',b:['Vos données sont stockées localement sur votre appareil.']},{h:'Comment les données sont-elles utilisées ?',b:['Vos données sont utilisées uniquement dans l’app pour afficher vos tâches et catégories.']}],mailHint:'Pour toute question, contactez l’assistance :',mail:'nicobulich@gmail.com'},
+ faq:{title:'RicordaMe – FAQ',hero:'Questions fréquentes',q:[{q:'Comment créer une tâche ?',a:'Touchez le bouton d’ajout et saisissez le titre.'},{q:'Comment fonctionnent les catégories ?',a:'Créez des catégories et attribuez des couleurs pour organiser les tâches visuellement.'},{q:'Que se passe-t-il quand je termine une tâche ?',a:'Les tâches terminées sont déplacées vers l’Archive et restent accessibles.'},{q:'RicordaMe nécessite-t-elle un compte ?',a:'Non. RicordaMe fonctionne sans connexion.'},{q:'Où mes données sont-elles stockées ?',a:'Vos données sont stockées localement sur votre appareil.'}]},
+ contact:{title:'RicordaMe – Contact',hero:'Contact',lead:'Si vous avez besoin d’aide, souhaitez signaler un bug ou proposer des améliorations :',mail:'E-mail',mailHint:'Merci d’indiquer le modèle d’iPhone et la version iOS.'},
+ releaseNotes:{title:'RicordaMe – Notes de version',hero:'Notes de version',lead:'Un petit changelog à garder à jour.',items:['Première version','Site d’assistance multilingue']}
+ }},
+ de:{names:{en:'English',it:'Italiano',fr:'Français',de:'Deutsch',es:'Español'},nav:{support:'Support',faq:'FAQ',contact:'Kontakt',privacy:'Datenschutz',releaseNotes:'Release Notes'},foot:(y)=>`© ${y} RicordaMe · Support`,pages:{
+ support:{title:'RicordaMe – Support',hero:'Wie können wir helfen?',lead:'Hilfe, FAQ und Kontaktinformationen für die RicordaMe iOS-App.',cta:'E-Mail schreiben',note:'Bitte nenne iPhone-Modell und iOS-Version.',quickLinks:'Schnellzugriff',privacy:'Datenschutz-Kurzfassung',privacyLines:['Kein Login erforderlich','Keine unnötige Datenerfassung','Daten werden lokal auf dem Gerät gespeichert'],appReviewTitle:'App Review Info',appReviewLead:'RicordaMe benötigt keinen Login, um Funktionen zu nutzen.',appReviewList:['Aufgaben erstellen','Kategorien erstellen und Farben zuweisen','Abgeschlossene Aufgaben archivieren']},
+ privacy:{title:'RicordaMe – Datenschutz',hero:'Datenschutzerklärung',lead:'RicordaMe wurde mit Fokus auf Datenschutz entwickelt.',sections:[{h:'Welche Daten sammelt RicordaMe?',b:['RicordaMe benötigt kein Konto.','RicordaMe sammelt keine personenbezogenen Daten für Analyse oder Werbung.']},{h:'Wo werden die Daten gespeichert?',b:['Deine Daten werden lokal auf deinem Gerät gespeichert.']},{h:'Wie werden die Daten genutzt?',b:['Deine Daten werden nur in der App verwendet, um Aufgaben und Kategorien anzuzeigen.']}],mailHint:'Bei Fragen kontaktiere den Support:',mail:'nicobulich@gmail.com'},
+ faq:{title:'RicordaMe – FAQ',hero:'Häufige Fragen',q:[{q:'Wie erstelle ich eine Aufgabe?',a:'Tippe auf die Hinzufügen-Taste und gib den Titel ein.'},{q:'Wie funktionieren Kategorien?',a:'Erstelle Kategorien und weise Farben zu, um Aufgaben visuell zu organisieren.'},{q:'Was passiert, wenn ich eine Aufgabe abschließe?',a:'Abgeschlossene Aufgaben werden ins Archiv verschoben und bleiben zugänglich.'},{q:'Benötigt RicordaMe ein Konto?',a:'Nein. RicordaMe funktioniert ohne Login.'},{q:'Wo werden meine Daten gespeichert?',a:'Deine Daten werden lokal auf deinem Gerät gespeichert.'}]},
+ contact:{title:'RicordaMe – Kontakt',hero:'Kontakt',lead:'Wenn du Hilfe brauchst, einen Bug melden oder Verbesserungen vorschlagen möchtest:',mail:'E-Mail',mailHint:'Bitte nenne iPhone-Modell und iOS-Version.'},
+ releaseNotes:{title:'RicordaMe – Release Notes',hero:'Release Notes',lead:'Kurzes Änderungsprotokoll zum Aktualisieren.',items:['Erste Version','Mehrsprachige Support-Seite']}
+ }},
+ es:{names:{en:'English',it:'Italiano',fr:'Français',de:'Deutsch',es:'Español'},nav:{support:'Soporte',faq:'FAQ',contact:'Contacto',privacy:'Privacidad',releaseNotes:'Notas de versión'},foot:(y)=>`© ${y} RicordaMe · Soporte`,pages:{
+ support:{title:'RicordaMe – Soporte',hero:'¿Cómo podemos ayudar?',lead:'Ayuda, preguntas frecuentes y contacto para la app iOS RicordaMe.',cta:'Enviar correo',note:'Incluye modelo de iPhone y versión de iOS.',quickLinks:'Enlaces rápidos',privacy:'Resumen de privacidad',privacyLines:['No requiere inicio de sesión','Sin recopilación de datos innecesaria','Datos guardados localmente en el dispositivo'],appReviewTitle:'Info App Review',appReviewLead:'RicordaMe no requiere iniciar sesión para acceder a las funciones.',appReviewList:['Crear tareas','Crear categorías y asignar colores','Archivar tareas completadas']},
+ privacy:{title:'RicordaMe – Privacidad',hero:'Política de privacidad',lead:'RicordaMe está diseñada pensando en la privacidad.',sections:[{h:'¿Qué datos recopila RicordaMe?',b:['RicordaMe no requiere una cuenta.','RicordaMe no recopila datos personales para análisis o publicidad.']},{h:'¿Dónde se almacenan los datos?',b:['Tus datos se guardan localmente en tu dispositivo.']},{h:'¿Cómo se utilizan los datos?',b:['Tus datos se utilizan solo dentro de la app para mostrar tareas y categorías.']}],mailHint:'Si tienes preguntas, contacta con soporte:',mail:'nicobulich@gmail.com'},
+ faq:{title:'RicordaMe – FAQ',hero:'Preguntas frecuentes',q:[{q:'¿Cómo creo una tarea?',a:'Pulsa el botón de añadir y escribe el título.'},{q:'¿Cómo funcionan las categorías?',a:'Crea categorías y asigna colores para organizar las tareas visualmente.'},{q:'¿Qué pasa cuando completo una tarea?',a:'Las tareas completadas se mueven al Archivo y siguen siendo accesibles.'},{q:'¿RicordaMe requiere una cuenta?',a:'No. RicordaMe funciona sin iniciar sesión.'},{q:'¿Dónde se guardan mis datos?',a:'Tus datos se guardan localmente en tu dispositivo.'}]},
+ contact:{title:'RicordaMe – Contacto',hero:'Contacto',lead:'Si necesitas ayuda, quieres reportar un error o sugerir mejoras:',mail:'Correo',mailHint:'Incluye modelo de iPhone y versión de iOS.'},
+ releaseNotes:{title:'RicordaMe – Notas de versión',hero:'Notas de versión',lead:'Changelog breve para mantener actualizado.',items:['Primera versión','Sitio de soporte multilingüe']}
+ }} };
+function buildNav(base,locale,page){const t=T[locale];const nav=document.getElementById('nav');nav.innerHTML='';const links=[{p:'support',k:'support'},{p:'faq',k:'faq'},{p:'contact',k:'contact'},{p:'privacy',k:'privacy'},{p:'release-notes',k:'releaseNotes'}];links.forEach(l=>{const a=document.createElement('a');a.href=`${base}/${locale}/${l.p==='support'?'':l.p+'/'}`;a.textContent=t.nav[l.k];if(page===l.p)a.classList.add('active');nav.appendChild(a);});
+ const brand=document.getElementById('brand');brand.href=`${base}/${locale}/`;brand.textContent='RicordaMe';
+ const sel=document.getElementById('locale');sel.innerHTML='';SUPPORTED.forEach(code=>{const opt=document.createElement('option');opt.value=code;opt.textContent=t.names[code];sel.appendChild(opt);});sel.value=locale;sel.onchange=function(){const newLocale=sel.value;const t=T[newLocale];let href=`${base}/${newLocale}/${page==='support'?'':page+'/'}`;
+ history.replaceState({},'',href);
+ render(newLocale,page);};
+ document.getElementById('foot').textContent=T[locale].foot(new Date().getFullYear());
+}
+function render(locale,page){const base=getBasePath();const txt=T[locale];document.documentElement.lang=locale;const app=document.getElementById('app');buildNav(base,locale,page);
+ const year=new Date().getFullYear();
+ let html='';
+ if(page==='support'){const p=txt.pages.support;document.title=p.title;html+=`<div class="section"><div class="pad"><h1>${p.hero}</h1><p>${p.lead}</p><a class="btn" href="mailto:nicobulich@gmail.com">${p.cta}</a><p>${p.note}</p></div></div>`;
+ html+=`<div class="section"><div class="pad"><h2>${p.quickLinks}</h2><ul><li><a href="${base}/${locale}/faq/">${txt.nav.faq}</a></li><li><a href="${base}/${locale}/contact/">${txt.nav.contact}</a></li><li><a href="${base}/${locale}/privacy/">${txt.nav.privacy}</a></li></ul></div></div>`;
+ html+=`<div class="section"><div class="pad"><h2>${p.appReviewTitle}</h2><p>${p.appReviewLead}</p><ul>${p.appReviewList.map(x=>`<li>${x}</li>`).join('')}</ul></div></div>`;
+ html+=`<div class="section"><div class="pad"><h2>${p.privacy}</h2><ul>${p.privacyLines.map(x=>`<li>${x}</li>`).join('')}</ul><p><a class="btn" href="${base}/${locale}/privacy/">${txt.nav.privacy}</a></p></div></div>`;
+ }
+ else if(page==='privacy'){const p=txt.pages.privacy;document.title=p.title;html+=`<div class="section"><div class="pad"><h1>${p.hero}</h1><p>${p.lead}</p></div></div>`;
+ p.sections.forEach(s=>{html+=`<div class="section"><div class="pad"><h2>${s.h}</h2><ul>${s.b.map(x=>`<li>${x}</li>`).join('')}</ul></div></div>`;});
+ html+=`<div class="section"><div class="pad"><p>${p.mailHint}</p><a class="btn" href="mailto:${p.mail}">${p.mail}</a></div></div>`;
+ }
+ else if(page==='faq'){const p=txt.pages.faq;document.title=p.title;html+=`<div class="section"><div class="pad"><h1>${p.hero}</h1><ul>${p.q.map(x=>`<li><strong>${x.q}</strong><br>${x.a}</li>`).join('')}</ul></div></div>`;}
+ else if(page==='contact'){const p=txt.pages.contact;document.title=p.title;html+=`<div class="section"><div class="pad"><h1>${p.hero}</h1><p>${p.lead}</p><p>${p.mail}: <a href="mailto:nicobulich@gmail.com">nicobulich@gmail.com</a></p><p>${p.mailHint}</p></div></div>`;}
+ else if(page==='release-notes'){const p=txt.pages.releaseNotes;document.title=p.title;html+=`<div class="section"><div class="pad"><h1>${p.hero}</h1><p>${p.lead}</p><ul>${p.items.map(x=>`<li>${x}</li>`).join('')}</ul></div></div>`;}
+ app.innerHTML=html;
+ document.getElementById('foot').textContent=T[locale].foot(year);
+}
+window.addEventListener('popstate',function(){const route=getRoute();const norm=normalize(route);render(norm.locale,norm.page);});
+(function init(){const route=getRoute();const norm=normalize(route);
+ const base=getBasePath();let clean=`${base}/${norm.locale}/${norm.page==='support'?'':norm.page+'/'}`;
+ if(location.pathname!==clean){history.replaceState({},'',clean);}render(norm.locale,norm.page);})();
+</script>
 </body>
 </html>
